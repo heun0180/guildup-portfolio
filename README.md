@@ -104,6 +104,10 @@ flowchart LR
 
 **[상세 문서: PUBG API 중복 요청 최적화와 경기 데이터 재사용](docs/cases/pubg-request-reuse.md)**
 
+**[실행 가능한 코드 예제: PUBG Match 요청 공유](examples/pubg-request-sharing/README.md)**
+
+운영 설계를 재구성한 독립 Java 21 예제입니다. 실제 API 없이 요청 공유·캐시·동시성 제한을 실행하고 테스트할 수 있으며, 운영 구현과의 차이는 예제 README에 구분했습니다.
+
 <details>
 <summary>문제 → 원인 → 설계 → 구현 → 검증 → 한계</summary>
 
@@ -202,4 +206,4 @@ JUnit·Mockito·MockMvc와 H2 통합 테스트를 사용합니다. PostgreSQL의
 
 ---
 
-이 저장소는 공개 포트폴리오입니다. 운영 소스는 별도의 Private 저장소에서 관리하며, 현재 공개 범위는 README와 빙고 집계·PUBG API·킬내기 정산 기술 문서입니다. 기술 근거의 클래스·테스트명은 운영 소스 기준입니다.
+이 저장소는 공개 포트폴리오입니다. 운영 소스는 별도의 Private 저장소에서 관리하며, 현재 공개 범위는 README, 빙고 집계·PUBG API·킬내기 정산 기술 문서와 독립 Java 21 요청 공유 예제입니다. 기술 문서의 근거 클래스·테스트명은 운영 소스 기준이며, 공개 예제는 해당 설계의 일부를 재구성한 별도 구현입니다.
