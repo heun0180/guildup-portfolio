@@ -2,7 +2,9 @@
 
 > 발표 예정 시각과 작업의 식별을 분리하고, DB 행 잠금과 UUID Claim 검증으로 오래된 작업의 결과·보상 반영을 거부하는 사례입니다.
 
-[프로젝트 README](../../README.md) · [빙고 집계 정합성](bingo-consistency.md) · [PUBG 요청 공유와 데이터 재사용](pubg-request-reuse.md)
+[프로젝트 README](../../README.md) · [빙고 집계 정합성](bingo-consistency.md) · [PUBG 요청 공유와 데이터 재사용](pubg-request-reuse.md) · [실행 가능한 UUID 정산 예제](../../examples/settlement-claim/README.md)
+
+> 공개 예제는 핵심 Claim·트랜잭션 설계를 Java 21·Spring Data JPA·H2로 재구성한 독립 구현입니다. 운영 소스 전체나 동일 구현이 아닙니다. 합성 결과와 단일 수상자 보상만 사용하며, 팀 점수·일일 보상 제한·빙고·자동 주기 타이머는 생략했습니다. 원본과의 차이 및 H2·폐기용 PostgreSQL 테스트 결과는 예제 README에 구분했습니다.
 
 | 핵심 질문 | 실제 구현에서 확인한 답 |
 | --- | --- |
